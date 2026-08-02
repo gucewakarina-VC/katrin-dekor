@@ -69,6 +69,10 @@ img {
   padding-inline: clamp(1rem, 4vw, 2rem);
 }
 
+section[id] {
+  scroll-margin-top: 96px;
+}
+
 /* Header */
 
 .header {
@@ -477,5 +481,104 @@ img {
 
   .directions__number {
     margin-bottom: 1.75rem;
+  }
+}
+
+/* Benefits */
+
+.benefits {
+  padding-block: clamp(5rem, 12vh, 8rem);
+  background-color: var(--color-secondary);
+  color: var(--color-bg);
+}
+
+.benefits__header {
+  max-width: 20ch;
+  margin-bottom: clamp(3rem, 7vw, 4.5rem);
+}
+
+.benefits__eyebrow {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.benefits__title {
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  line-height: 1.15;
+  color: var(--color-bg);
+}
+
+.benefits__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.benefits__item {
+  padding: clamp(1.75rem, 4vw, 2.75rem);
+  border-top: 1px solid rgba(250, 247, 244, 0.18);
+}
+
+.benefits__item:nth-child(odd) {
+  border-right: 1px solid rgba(250, 247, 244, 0.18);
+  padding-left: 0;
+}
+
+.benefits__item:nth-child(even) {
+  padding-right: 0;
+}
+
+.benefits__item:nth-child(1),
+.benefits__item:nth-child(2) {
+  border-top: none;
+  padding-top: 0;
+}
+
+.benefits__number {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  line-height: 1;
+  color: var(--color-primary);
+}
+
+.benefits__item-title {
+  margin-bottom: 0.85rem;
+  font-size: clamp(1.35rem, 2vw, 1.65rem);
+  color: var(--color-bg);
+}
+
+.benefits__item-text {
+  max-width: 28rem;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: rgba(250, 247, 244, 0.78);
+}
+
+/* Benefits — mobile */
+
+@media (max-width: 768px) {
+  .benefits__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits__item,
+  .benefits__item:nth-child(odd),
+  .benefits__item:nth-child(even) {
+    padding: 1.75rem 0;
+    border-right: none;
+  }
+
+  .benefits__item:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .benefits__item:nth-child(2) {
+    border-top: 1px solid rgba(250, 247, 244, 0.18);
   }
 }
