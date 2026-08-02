@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#FAF7F4">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400&family=Manrope:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,9 +29,84 @@
   </header>
 
   <main>
+    <div class="page-ornament" aria-hidden="true">
+      <svg viewBox="0 0 180 2400" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin meet">
+        <path
+          d="M118 20
+             C96 110, 58 190, 72 310
+             C84 410, 132 470, 118 580
+             C102 700, 48 760, 62 900
+             C74 1020, 128 1090, 112 1220
+             C94 1360, 42 1440, 58 1580
+             C72 1700, 118 1780, 98 1920
+             C82 2020, 54 2100, 68 2260"
+          stroke="#D7B77A"
+          stroke-width="1.15"
+          stroke-linecap="round"
+        />
+        <path
+          d="M92 48
+             C78 140, 44 220, 56 340
+             C66 430, 108 490, 96 600
+             C82 720, 40 790, 52 920
+             C62 1030, 104 1110, 88 1240
+             C72 1380, 36 1470, 48 1610
+             C58 1720, 96 1800, 78 1960
+             C64 2080, 42 2160, 54 2320"
+          stroke="#D7B77A"
+          stroke-width="1"
+          stroke-linecap="round"
+        />
+        <path
+          d="M142 160
+             C118 250, 88 320, 98 420
+             C108 510, 148 560, 132 680
+             C118 790, 78 850, 92 980
+             C104 1090, 146 1160, 128 1300
+             C112 1430, 72 1510, 88 1650
+             C100 1750, 136 1820, 118 1960"
+          stroke="#D7B77A"
+          stroke-width="1"
+          stroke-linecap="round"
+        />
+        <path
+          d="M78 720
+             C42 780, 18 860, 36 940
+             C54 1020, 110 1040, 128 980
+             C146 920, 128 860, 96 850
+             C70 842, 52 880, 58 930"
+          stroke="#D7B77A"
+          stroke-width="1.1"
+          stroke-linecap="round"
+        />
+        <path
+          d="M64 380L65.5 388.5L74 390L65.5 391.5L64 400L62.5 391.5L54 390L62.5 388.5Z"
+          stroke="#D7B77A"
+          stroke-width="1"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M108 1180L109.6 1189L118 1191L109.6 1193L108 1202L106.4 1193L98 1191L106.4 1189Z"
+          stroke="#D7B77A"
+          stroke-width="1"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M52 1880L53.4 1887.5L61 1889L53.4 1890.5L52 1898L50.6 1890.5L43 1889L50.6 1887.5Z"
+          stroke="#D7B77A"
+          stroke-width="1"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+
     <section id="hero" class="hero">
-      <div class="container hero__inner">
+      <div class="hero__stage">
         <div class="hero__content reveal">
+          <div class="hero__monogram" aria-hidden="true">
+            <span class="hero__monogram-text"><span>K</span><span>D</span></span>
+            <span class="hero__monogram-line"></span>
+          </div>
           <p class="hero__eyebrow">Студия дизайнерской флористики</p>
           <h1 class="hero__title">Элегантная флористика, которая остаётся</h1>
           <p class="hero__text">Создаём интерьерные композиции из стабилизированных цветов для дома, бизнеса и особенных событий.</p>
@@ -40,14 +115,20 @@
             <a href="#contacts" class="hero__btn">Обсудить композицию</a>
             <a href="#gallery" class="hero__link">Посмотреть работы</a>
           </div>
-
-          <p class="hero__caption">Интерьеры · События · Бизнес-пространства</p>
         </div>
 
         <div class="hero__media" aria-hidden="true">
-          <span class="hero__media-label">Фотография будет добавлена</span>
+          <div class="hero__media-glow"></div>
+          <div class="hero__media-frame"></div>
+          <div class="hero__media-arch">
+            <span class="hero__media-label">Фотография будет добавлена</span>
+          </div>
         </div>
+
+        <span class="hero__rule" aria-hidden="true"></span>
       </div>
+
+      <p class="hero__caption">Интерьеры · События · Бизнес-пространства</p>
     </section>
     <section id="about" class="about">
       <div class="container about__inner">
