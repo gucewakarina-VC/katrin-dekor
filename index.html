@@ -10,10 +10,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header></header>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">KATRIN DEKOR</a>
+
+      <nav class="header__nav" aria-label="Основная навигация">
+        <a href="#about">О студии</a>
+        <a href="#directions">Направления</a>
+        <a href="#benefits">Преимущества</a>
+        <a href="#gallery">Работы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a href="#contacts" class="header__cta">Обсудить проект</a>
+    </div>
+  </header>
 
   <main>
-    <section id="hero"></section>
+    <section id="hero" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Студия дизайнерской флористики</p>
+          <h1 class="hero__title">Элегантная флористика, которая остаётся</h1>
+          <p class="hero__text">Создаём интерьерные композиции из стабилизированных цветов для дома, бизнеса и особенных событий.</p>
+
+          <div class="hero__actions">
+            <a href="#contacts" class="hero__btn">Обсудить композицию</a>
+            <a href="#gallery" class="hero__link">Посмотреть работы</a>
+          </div>
+
+          <p class="hero__caption">Интерьеры · События · Бизнес-пространства</p>
+        </div>
+
+        <div class="hero__media" aria-hidden="true">
+          <span class="hero__media-label">Фотография будет добавлена</span>
+        </div>
+      </div>
+    </section>
     <section id="about"></section>
     <section id="directions"></section>
     <section id="benefits"></section>
