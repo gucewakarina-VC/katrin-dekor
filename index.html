@@ -8,11 +8,17 @@
   <meta name="theme-color" content="#FAF7F4">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
+    <img
+      class="header__monogram-echo"
+      src="images/kd-monogram.png"
+      alt=""
+      aria-hidden="true"
+    >
     <div class="container header__inner">
       <a href="#hero" class="header__logo">KATRIN DEKOR</a>
 
@@ -24,7 +30,12 @@
         <a href="#contacts">Контакты</a>
       </nav>
 
-      <a href="#contacts" class="header__cta">Обсудить проект</a>
+      <a
+        href="https://max.ru/u/f9LHodD0cOIr9eXQBMdfq0vQQxIEvhsYeRRdinjzpUlJ-KaRAB6DUc7TXXM"
+        class="header__cta"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Обсудить проект</a>
     </div>
   </header>
 
@@ -101,49 +112,68 @@
     </div>
 
     <section id="hero" class="hero">
+      <img
+        class="hero__monogram"
+        src="images/kd-monogram-hero-final.png"
+        alt=""
+        aria-hidden="true"
+      >
+
       <div class="hero__stage">
         <div class="hero__content reveal">
-          <div class="hero__monogram" aria-hidden="true">
-            <img
-              class="hero__monogram-image"
-              src="images/kd-monogram.png"
-              alt=""
-              width="644"
-              height="390"
-            >
-          </div>
           <p class="hero__eyebrow">Студия дизайнерской флористики</p>
-          <h1 class="hero__title">Элегантная флористика, которая остаётся</h1>
+          <h1 class="hero__title">
+            <span class="hero__title-main">Элегантная флористика,</span>
+            <span class="hero__title-accent">которая остаётся</span>
+          </h1>
           <p class="hero__text">Создаём интерьерные композиции из стабилизированных цветов для дома, бизнеса и особенных событий.</p>
 
           <div class="hero__actions">
-            <a href="#contacts" class="hero__btn">Обсудить композицию</a>
+            <a
+              href="https://max.ru/u/f9LHodD0cOIr9eXQBMdfq0vQQxIEvhsYeRRdinjzpUlJ-KaRAB6DUc7TXXM"
+              class="hero__btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Обсудить композицию</a>
             <a href="#gallery" class="hero__link">Посмотреть работы</a>
           </div>
         </div>
 
-        <div class="hero__media" aria-hidden="true">
-          <div class="hero__media-glow"></div>
-          <div class="hero__media-frame"></div>
+        <div class="hero__media">
+          <div class="hero__media-glow" aria-hidden="true"></div>
+          <div class="hero__media-frame" aria-hidden="true"></div>
           <div class="hero__media-arch">
-            <span class="hero__media-label">Фотография будет добавлена</span>
+            <img
+              class="hero__media-image"
+              src="images/hero-flowers-final.png"
+              alt="Композиция из стабилизированных цветов"
+            >
           </div>
         </div>
-
-        <span class="hero__rule" aria-hidden="true"></span>
       </div>
 
       <p class="hero__caption">Интерьеры · События · Бизнес-пространства</p>
     </section>
+
+    <section id="stabilized" class="stabilized">
+      <div class="container stabilized__inner">
+        <h2 class="stabilized__title reveal">
+          Что такое <em class="stabilized__title-accent">стабилизированные цветы</em>?
+        </h2>
+        <p class="stabilized__text reveal">Стабилизированные цветы — это натуральные цветы, обработанные по специальной технологии. Они сохраняют красоту, свежесть и естественный внешний вид от 3 до 5 лет — без полива и ухода.</p>
+        <ul class="stabilized__points reveal">
+          <li class="stabilized__point">Натуральные цветы</li>
+          <li class="stabilized__point">3–5 лет красоты</li>
+          <li class="stabilized__point">Без полива и ухода</li>
+        </ul>
+      </div>
+    </section>
+
     <section id="about" class="about">
       <div class="container about__inner">
-        <div class="about__intro reveal">
+        <div class="about__content reveal">
           <p class="about__eyebrow">О студии</p>
           <h2 class="about__title">Цветы как часть интерьера</h2>
-          <div class="about__accent" aria-hidden="true"></div>
-        </div>
-
-        <div class="about__body reveal">
           <p class="about__text">Мы создаём композиции, которые не выглядят декором “на время”, а становятся частью архитектуры и стиля пространства.</p>
           <p class="about__text about__text--secondary">Композиции подбираются индивидуально под стиль и масштаб пространства.</p>
 
@@ -151,6 +181,14 @@
             <li class="about__fact">3–5 лет сохраняют внешний вид</li>
             <li class="about__fact">Не требуют полива и специального ухода</li>
           </ul>
+        </div>
+
+        <div class="about__visual reveal">
+          <img
+            class="about__image"
+            src="images/interior-decor.JPG"
+            alt="Интерьерная композиция из стабилизированных цветов"
+          >
         </div>
       </div>
     </section>
@@ -226,40 +264,40 @@
         </div>
 
         <div class="gallery__grid">
-          <figure class="gallery__item gallery__item--tall reveal">
-            <div class="gallery__media gallery__media--1" aria-hidden="true"></div>
-            <figcaption class="gallery__caption"><span>01</span> — Интерьеры</figcaption>
+          <figure class="gallery__item gallery__item--feature reveal">
+            <div class="gallery__media">
+              <img
+                class="gallery__image"
+                src="images/composition-art-sharp.png"
+                alt="Художественная флористическая композиция"
+              >
+            </div>
           </figure>
 
-          <figure class="gallery__item gallery__item--sm reveal">
-            <div class="gallery__media gallery__media--2" aria-hidden="true"></div>
-            <figcaption class="gallery__caption"><span>02</span> — Для дома</figcaption>
+          <figure class="gallery__item gallery__item--secondary reveal">
+            <div class="gallery__media">
+              <img
+                class="gallery__image"
+                src="images/composition-gold.JPG"
+                alt="Золотистая флористическая композиция"
+              >
+            </div>
           </figure>
 
-          <figure class="gallery__item gallery__item--sm reveal">
-            <div class="gallery__media gallery__media--3" aria-hidden="true"></div>
-            <figcaption class="gallery__caption"><span>03</span> — Бизнес-пространства</figcaption>
-          </figure>
-
-          <figure class="gallery__item gallery__item--wide reveal">
-            <div class="gallery__media gallery__media--4" aria-hidden="true"></div>
-            <figcaption class="gallery__caption"><span>04</span> — Свадьбы и праздники</figcaption>
-          </figure>
-
-          <figure class="gallery__item gallery__item--md reveal">
-            <div class="gallery__media gallery__media--5" aria-hidden="true"></div>
-            <figcaption class="gallery__caption"><span>05</span> — Детали</figcaption>
+          <figure class="gallery__item gallery__item--tertiary reveal">
+            <div class="gallery__media">
+              <img
+                class="gallery__image"
+                src="images/composition-classic.JPG"
+                alt="Классическая флористическая композиция"
+              >
+            </div>
           </figure>
         </div>
       </div>
     </section>
     <section id="contacts" class="contacts">
       <div class="container contacts__inner">
-        <div class="contacts__media reveal">
-          <div class="contacts__photo" aria-hidden="true"></div>
-          <p class="contacts__caption">Екатерина · дизайнер-флорист</p>
-        </div>
-
         <div class="contacts__content reveal">
           <p class="contacts__eyebrow">Katrin Dekor</p>
           <h2 class="contacts__title">Как со мной связаться</h2>
@@ -281,16 +319,32 @@
             </li>
             <li class="contacts__item">
               <span class="contacts__label">MAX</span>
-              <span class="contacts__link">Ссылка на профиль будет добавлена</span>
+              <a
+                class="contacts__link"
+                href="https://max.ru/u/f9LHodD0cOIr9eXQBMdfq0vQQxIEvhsYeRRdinjzpUlJ-KaRAB6DUc7TXXM"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Написать в MAX</a>
             </li>
           </ul>
 
           <a
             class="contacts__btn"
-            href="https://t.me/katrin_dekor555"
+            href="https://max.ru/u/f9LHodD0cOIr9eXQBMdfq0vQQxIEvhsYeRRdinjzpUlJ-KaRAB6DUc7TXXM"
             target="_blank"
             rel="noopener noreferrer"
           >Обсудить композицию</a>
+        </div>
+
+        <div class="contacts__media reveal">
+          <div class="contacts__photo">
+            <img
+              class="contacts__image"
+              src="images/katrin-portrait.JPG"
+              alt="Екатерина — дизайнер-флорист Katrin Dekor"
+            >
+          </div>
+          <p class="contacts__caption">Екатерина · дизайнер-флорист</p>
         </div>
       </div>
     </section>
